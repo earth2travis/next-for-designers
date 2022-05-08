@@ -24,6 +24,13 @@ The application will start at `http://localhost:3000` by default.
 
 The application will start at `http://localhost:3000` by default.
 
+## Add `.gitignore`
+
+```
+.next
+node_modules
+```
+
 ## Update `index.js`
 
 - `title`
