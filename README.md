@@ -37,3 +37,9 @@ node_modules
 - `meta`
 - `h1`
 - `p`
+
+## Add Components
+
+- `Layout`
+- `Nav`
+- `Header`
