@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import ArticleList from '../components/ArticleList';
 import styles from '../styles/Layout.module.css';
 
-export default function Home() {
+export default function Home({ articles }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,6 +14,8 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+
+      <ArticleList articles={articles} />
 
       <main className={styles.main}>
         <h1 className={styles.title}>Design and code an app with Next.js</h1>
@@ -68,3 +71,16 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const res = await fetch(
+    `https://jsonplaceholder.typicode.com/posts?_limit=6`
+  );
+  const articles = await res.json();
+
+  return {
+    props: {
+      articles,
+    },
+  };
+};
