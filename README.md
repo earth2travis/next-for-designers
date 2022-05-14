@@ -50,3 +50,14 @@ node_modules
 - `components/ArticleList.js`
 - `pages/article/`
 - `styles/Article.module.css`
+
+## getStaticPaths
+
+## Data
+
+-`data.js`
+
+## API
+
+- `pages/api/articles/[id].js`
+- `pages/api/articles/index.js`
