@@ -61,3 +61,16 @@ node_modules
 
 - `pages/api/articles/[id].js`
 - `pages/api/articles/index.js`
+
+## `<Meta />`
+
+Add Meta component to:
+
+- `Layout.js`
+- `ArticleItem.js`
+
+Update pages:
+
+- `index.js`
+- `article/[id]/index.js`
+- `about.js`

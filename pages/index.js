@@ -1,5 +1,4 @@
 import { server } from '../config';
-import Head from 'next/head';
 import Image from 'next/image';
 import ArticleList from '../components/ArticleList';
 import styles from '../styles/Layout.module.css';
@@ -7,15 +6,6 @@ import styles from '../styles/Layout.module.css';
 export default function Home({ articles }) {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Next for Designers</title>
-        <meta
-          name='description'
-          content='Design and code an app with Next.js'
-        />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-
       <ArticleList articles={articles} />
 
       <main className={styles.main}>
